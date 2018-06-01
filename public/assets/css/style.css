@@ -154,21 +154,26 @@ a:active {
 */
 .portfolio-wrapper {
     background-color: black;
+    height: 800px;
 }
 
 
 .portfolio-imgWrapper {
     position: relative;
-    width: 50%;
+    width: 300px;
+}
+
+.portfolio-content {
+    margin-top: 8%;
 }
 
 .image {
     display: block;
     width: 100%;
     height: auto;
-  }
+}
   
-  .overlay {
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -178,14 +183,16 @@ a:active {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
-  }
+    background-color: #ffd600;
+}
   
-  .container:hover .overlay {
+.portfolio-imgWrapper:hover .overlay {
     opacity: 1;
-  }
+}
   
-  .text {
+
+
+.portfolio-infoOvrly {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -194,7 +201,7 @@ a:active {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
 
 
