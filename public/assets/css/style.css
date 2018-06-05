@@ -150,13 +150,12 @@ a:active {
 }
 
 /* 
-    ================== CONTACT
+    ================== PORTFOLIO
 */
 .portfolio-wrapper {
     background-color: black;
     height: 800px;
 }
-
 
 .portfolio-imgWrapper {
     position: relative;
@@ -189,8 +188,6 @@ a:active {
 .portfolio-imgWrapper:hover .overlay {
     opacity: 1;
 }
-  
-
 
 .portfolio-infoOvrly {
     color: white;
@@ -202,6 +199,30 @@ a:active {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.portfolio-orvlyTitle {
+    color: #6d6d6d;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.portfolio-button {
+    font-size: 20px;
+    background-color: #ffd600; 
+    border:  1px solid #6d6d6d;
+    color: #6d6d6d; 
+    margin-top: 15px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.portfolio-button:hover{
+    background-color: #6d6d6d; 
+    color: #ffd600;
+    cursor: default;
+} 
 
 
 
