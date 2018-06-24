@@ -88,10 +88,10 @@ a:active {
 /* 
     =============== ABOUT ME
 */
- .about-wrapper {
+.about-wrapper {
     text-align: center; 
     background-color: #373737;
-    height: 1100px;
+    height: 100%;
 }
 
 .about-allCards {
@@ -128,7 +128,7 @@ a:active {
 }
 
 .about-storyImg {
-    width: 70%;
+    width: 300px;
     margin-top: 15%;
 }
 
@@ -137,16 +137,14 @@ a:active {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 35px;
-    width: 75%;
-    margin-top: 25%;
+    margin-top: 10%;
 }
 
 .about-storyText {
     color: #FAF9F9;
     font-size: 20px;
     width: 75%;
-
-    margin-top: 5%;
+    margin: 15%;
 }
 
 /* 
@@ -154,12 +152,10 @@ a:active {
 */
 .portfolio-wrapper {
     background-color: black;
-    height: 800px;
 }
 
 .portfolio-imgWrapper {
-    position: relative;
-    width: 300px;
+    width: 50%;
 }
 
 .portfolio-content {
@@ -223,24 +219,6 @@ a:active {
     color: #ffd600;
     cursor: default;
 } 
-
-
-
-
-
-/* .portfolio-img {
-    margin-bottom: 0;
-    height: 300px;
-    width: 400px;
-}
-
-.portfolio-info {
-    background-color: white;
-    height: 300px;
-    width: 400px;
-    display: none;
-} */
-
 
 /* 
     ================== CONTACT
@@ -359,12 +337,20 @@ input[type=text] {
     =============== MEDIA QUERIES
 */
 @media only screen and (max-width: 620px) {
+    .section-title {
+        width: 20%;
+        margin-left: 40%;
+    }
+
     .jumbotron-heading {    
         font-size: 32px; 
         margin: 25% 25%;
         height: 42px;
     }
 
+    /* 
+        =============== ABOUT
+    */
     .about-cardIcon {
         width: 40%;
     }
@@ -373,11 +359,17 @@ input[type=text] {
         margin-left: 12%;
     }
 
-    .section-title {
-        width: 20%;
-        margin-left: 40%;
+    /* 
+        =============== PORTFOLIO
+    */
+
+    .portfolio-imgWrapper {
+        margin-top: 10px;
     }
 
+    /* 
+        =============== CONTACT
+    */
     .contact-bar {
         width: 15%;
         margin-left: 40%;
