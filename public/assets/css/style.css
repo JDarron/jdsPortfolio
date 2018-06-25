@@ -150,10 +150,17 @@ a:active {
 */
 .portfolio-wrapper {
     background-color: black;
+    padding: 0 5%;
 }
 
 .portfolio-content {
-    margin: 10% 0;
+    margin-top: 10%;
+}
+
+.portfolio-imgWrapper {
+    position: relative;
+    width: 40vw;
+    margin-bottom: 15%;
 }
 
 .image {
