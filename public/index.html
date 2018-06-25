@@ -6,7 +6,8 @@
 		Joshua Spears
 	</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900"
+	 rel="stylesheet">
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 	<link rel='stylesheet' type='text/css' href='./assets/css/style.css'>
 </head>
@@ -162,14 +163,41 @@
 		</div>
 
 		<!-- CONTACT ME -->
-		<div class='row content-row contact-wrapper' id='contact'>
+		<div class='row contact-wrapper' id='contact'>
 			<h2 class='section-title'>
 				Contact
 			</h2>
 			<p class='contact-description'>
 				Want to collaborate or have a question?
 			</p>
+
+
 			<form id='form' class='form-wrapper'>
+				<div class="group">
+					<input type='text' id='name' name='name' required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label  for='name' class='form-labels'>Name</label>
+				</div>
+
+				<div class="group">
+					<input type='text' id='email' name='email'required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label for='email' class='form-labels'>Email</label>
+				</div>
+				
+				<label for='message' class='form-labels'>
+					Message
+				</label>
+				<textarea type='text' id='message' name='message'></textarea>
+
+				<button type='submit' value='Submit' class='submit'>
+					Submit
+				</button>
+			</form>
+
+			<!-- <form id='form' class='form-wrapper'>
 
 				<label for='name' class='form-labels'>
 					Name
@@ -189,7 +217,7 @@
 				<button type='submit' value='Submit' class='submit'>
 					Submit
 				</button>
-			</form>
+			</form> -->
 		</div>
 
 		<!-- CONECT WITH ME -->
@@ -246,9 +274,8 @@
 	-->
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src='./assets/javascript/API.js'></script>
+	<script src="./assets/javascript/logic.js"></script>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-
-
 </body>
 
 </html>
