@@ -16,7 +16,7 @@ module.exports = function (sequelize, DataTypes) {
             isEmail: true,
             len: [1]
         },
-        
+
         message: {
             type: DataTypes.TEXT,
             len: [1]
@@ -24,5 +24,5 @@ module.exports = function (sequelize, DataTypes) {
     });
 
     return Contact;
-    
+
 }; // END EXPORT
