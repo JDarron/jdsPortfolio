@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     /* For Bootstrap current state on portfolio sorting */
 
-    $('ul.nav-pills li a').click(function (e) {
+    $('ul.nav-pills li a').on('click', function (e) {
         $('ul.nav-pills li.active').removeClass('active')
         $(this).parent('li').addClass('active')
     })
