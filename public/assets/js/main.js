@@ -1,5 +1,10 @@
 $(document).ready(function () {
-    
+
+    $(".new-link").on(
+        "click",
+        () => window.location.href = $(this.attr("href"))
+    );
+
     // Add smooth scrolling to all links
     $("a").on('click', function (event) {
 
@@ -66,16 +71,6 @@ $(document).ready(function () {
             });
             return false;
         });
-    });
-
-
-    /* Magnific Popup */
-    $('.grid-wrapper').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
     });
 
 

@@ -1,8 +1,8 @@
 // DEPENDENCIES
-const express = require("express"),
-  bodyParser = require("body-parser"),
-  PORT = process.env.PORT || 3001,
-  app = express();
+const express = require("express");
+const bodyParser = require("body-parser");
+const PORT = process.env.PORT || 3001;
+const app = express();
 
 // BODY PARSER CONFIG
 app.use(bodyParser.urlencoded({ extended: false }));
