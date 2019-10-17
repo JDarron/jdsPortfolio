@@ -141,8 +141,8 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 #grid .mix {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 175px;
     vertical-align: top;
     margin: 20px 20px 20px 0;
     color: #fff;
@@ -154,8 +154,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0;
 }
 #grid .mix .overlay {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 175px;
     position: absolute;
     opacity: 0;
 	top:0;
@@ -462,11 +462,23 @@ label.valid {
 .btn-twitter:hover {
     color: #2BA9E0;
 }
+.btn-facebook:hover {
+    color: #204385;
+}
+.btn-dribbble:hover {
+    color: #D92C85;
+}
+.btn-instagram:hover {
+    color: #BAB1A8;
+}
 .btn-linkedin:hover {
     color: #015786;
 }
-.btn-github:hover {
-    color: #000000;
+.btn-pinterest:hover {
+    color: #CA2128;
+}
+.btn-google:hover {
+    color: #D3492C;
 }
 /* ==========================================================================
    Helper classes
