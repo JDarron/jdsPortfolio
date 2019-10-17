@@ -34,7 +34,10 @@ const sendEmail = function (req, res) {
 	};
 
 	transporter.sendMail(mailOptions, function (error, info) {
-		if (error) console.log(error);
+		if (error) {
+			console.log(error);
+			res.status(500).send("Success");
+		}
 		else res.send("Success");
 	});
 };
@@ -45,7 +48,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 
-app.use('/email', sendEmail);
+app.post('/email', sendEmail);
 
 
 app.listen(PORT, () => {
