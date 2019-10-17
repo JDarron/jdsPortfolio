@@ -111,10 +111,10 @@ $(document).ready(function () {
 
     $('#page-welcome').vegas({
         slides: [
-            { src: './assets/img/slider/01.png' },
-            { src: './assets/img/slider/02.png' },
-            { src: './assets/img/slider/03.png' },
-            { src: './assets/img/slider/04.png' }
+            { src: './assets/img/slider/01.jpg' },
+            { src: './assets/img/slider/02.jpg' },
+            { src: './assets/img/slider/03.jpg' },
+            { src: './assets/img/slider/04.jpg' }
         ],
         overlay: true
     });
