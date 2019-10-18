@@ -6,6 +6,20 @@ $(document).ready(function () {
             window.open(e.target.attributes.href.value, '_blank');
         }
     );
+    
+    // Close the mobile nav when clicking link
+    $('.navbar-collapse a').click(function (event) {
+        $(".navbar-collapse").collapse('hide');
+    });
+
+    // Close the mobile nav when clicking outside
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("in");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            $("button.navbar-toggle").click();
+        }
+    });
 
     // Add smooth scrolling to all links
     $("a").on('click', function (event) {
