@@ -2,8 +2,8 @@ $(document).ready(function () {
 
     $(".new-link").on(
         "click",
-        function(e) {
-            window.open(e.target.attributes.href.value, '_blank');
+        function(event) {
+            window.open(event.target.attributes.href.value, '_blank');
         }
     );
     
