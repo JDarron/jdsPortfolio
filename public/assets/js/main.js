@@ -6,11 +6,6 @@ $(document).ready(function () {
             window.open(event.target.attributes.href.value, '_blank');
         }
     );
-    
-    // Close the mobile nav when clicking link
-    $('.navbar-collapse a').click(function (event) {
-        $(".navbar-collapse").collapse('hide');
-    });
 
     // Close the mobile nav when clicking outside
     $(document).click(function (event) {
