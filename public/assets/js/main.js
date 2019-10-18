@@ -2,7 +2,9 @@ $(document).ready(function () {
 
     $(".new-link").on(
         "click",
-        () => window.location.href = $(this.attr("href"))
+        function(e) {
+            window.open(e.target.attributes.href.value, '_blank');
+        }
     );
 
     // Add smooth scrolling to all links
