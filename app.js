@@ -8,13 +8,15 @@ const nodemailer = require('nodemailer')
 
 
 const transporter = nodemailer.createTransport({
-	host: 'smtp.gmail.com',
+	service: 'gmail',
 	port: 465,
 	secure: true,
-	service: 'gmail',
 	auth: {
+		type: 'OAuth2',
 		user: process.env.EMAIL,
-		pass: process.env.EMAIL_PASSWORD
+		clientId: process.env.CLIENT_ID,
+		clientSecret: process.env.CLIENT_SECRET,
+		refreshToken: process.env.REFRESH_TOKEN
 	}
 })
 
@@ -42,7 +44,7 @@ const sendEmail = function (req, res) {
 			if (error) {
 				console.log(error)
 				res.status(500).send('Success')
-			} else res.send('Success')
+			} else res.status(200).send('Success')
 		})
 	}
 }
