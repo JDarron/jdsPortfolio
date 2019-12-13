@@ -24,13 +24,11 @@ const sendEmail = function (req, res) {
 	const name = req.body.name
 	const message = req.body.message
 
-	if (email === '' || 
-		email === null || 
-		name === '' || 
+	if (email === null || 
 		name === null || 
-		message === '' ||
-		message === null) res.status(500).send('Error')
-	else {
+		message === null) {
+			res.status(500).send('Error')
+	} else {
 		const mailOptions = {
 			from: email,
 			to: 'j.dspears@yahoo.com',
@@ -44,8 +42,7 @@ const sendEmail = function (req, res) {
 			if (error) {
 				console.log(error)
 				res.status(500).send('Success')
-			}
-			else res.send('Success')
+			} else res.send('Success')
 		})
 	}
 }
